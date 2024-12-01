@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Speech</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Full-Width Banner Section with Parallax Effect -->
+<header id="parallax-banner">
+    <div class="banner-content">
+    </div>
+</header>
+
+<div id="day-message-container"></div>
+
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About The Beats!</h2>
+        <p style="font-size: large"> Speed Speech is an innovative company dedicated to transforming speech therapy for children through the power of AI and interactive technology. We specialize in selling a unique DJ-inspired speech therapy set, which includes an AI-powered headset and control board designed to make learning fun and effective. Our product combines cutting-edge speech recognition technology with engaging exercises and games, helping children develop their communication skills with confidence and enjoyment. At Speed Speech, we believe every child deserves a voice—and we’re here to help them find it!</p>
+        <div class="image-gallery">
+            <img src="img/image1.jpg" alt="headset" title="headset">
+            <img src="img/image2.jpg" alt="wearing-headset" title="wearing-headset">
+        </div>
+        <div class="team">
+            <h2>Meet the Team!</h2>
+            <div class="member">
+                <img src="img/team1.jpeg" alt="Team Member 1" title="team photo 1" class="team-photo">
+                <h3>Faozia Abedin - Founder & Lead Innovator</h3>
+                <p>Faozia is a passionate speech therapist with over 8 years of experience helping children overcome speech challenges. Inspired by the power of AI and music, Faozia created Speed Speech to make speech therapy engaging and fun. When not innovating, Faozia loves experimenting with music and exploring new tech trends..</p>
+            </div>
+            <div class="member">
+                <img src="img/team2.jpeg" alt="Team Member 2" title="team photo 2" class="team-photo">
+                <h3>Ali Ajwani - AI Specialist</h3>
+                <p>Ali is the tech genius behind Speed Speech’s cutting-edge software. With a Master’s degree in Artificial Intelligence, Ali designed the personalized AI algorithms that make Speed Speech interactive and adaptive for each child’s needs. A music lover at heart, Ali believes in combining creativity and technology to change lives.</p>
+            </div>
+            <div class="member">
+                <img src="img/team3.pdf" alt="Team Member 3" tile="team photo 3" class="team-photo">
+                <h3>Anya Makim - Child Engagement Expert</h3>
+                <p>Anya brings a background in early childhood education and years of experience designing kid-friendly learning experiences. At Speed Speech, Anya ensures the product is both educational and entertaining, creating speech exercises that kids love. Outside work, Anya enjoys crafting DIY projects and teaching dance classes for kids.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+<section id="products" class ="hidden">
+    <h2>Our Products</h2>
+    
+    <!-- Product 1 -->
+    <div class="product">
+        <img src="img/product1.jpg" alt="product 1" title= "product 1" >
+        <h3>AI Speech Therapy Headset</h3> 
+        <p>Product Code: AI-TH001</p>
+        <p>Enhance speech therapy sessions with this AI-powered headset. Designed for children, it provides real-time feedback on speech patterns and clarity.</p>
+        <button>Add to Cart</button>
+    </div>
+    
+    <!-- Product 2 -->
+    <div class="product">
+        <img src="img/product2.jpg"alt="product 2" title= "product 2" >
+        <h3>Speech Therapy Control Board</h3>
+        <p>Product Code: AI-CB002</p>
+        <p>A user-friendly control board designed for interactive speech therapy exercises. It connects seamlessly with the AI Speech Therapy Headset.</p>
+        <button>Add to Cart</button>
+    </div>
+    
+    <!-- Product 3 -->
+    <div class="product">
+        <img src="img/product3.jpg"alt="product 3" title= "product 3" >
+        <h3>Speech Therapy Smartwatch</h3>
+        <p>Product Code: AI-APP003</p>
+        <p>Access personalized speech exercises and games through our watch, tailored to each child's learning needs and progress.</p>
+        <button>Add to Cart</button>
+    </div>
+    
+    <!-- Product 4 -->
+    <div class="product">
+        <img src="img/product4.jpg"alt="product 4" title= "product 4"  >
+        <h3>Interactive Speech Therapy Toys</h3>
+        <p>Product Code: AI-TOY004</p>
+        <p>These toys encourage children to practice speech through fun, interactive activities. They’re perfect for keeping kids engaged while learning.</p>
+        <button>Add to Cart</button>
+    </div>
+</section>
+
+<!-- Logo above Contact Us section -->
+<div class="logo-container">
+    <img src="img/logo.png" alt="Speed Speech Logo" class="logo">
+</div>
+
+   <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <!-- Phone Number -->
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <!-- Reason for Message (Dropdown) -->
+        <label for="reason">Reason for Message:</label>
+        <select id="reason" name="reason">
+            <option value="general">General Inquiry</option>
+            <option value="pricing">Pricing</option>
+            <option value="product-info">Product Info</option>
+            <option value="shipping">Shipping</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Product ID (Initially Hidden) -->
+        <div id="product-id-container" style="display:none;">
+            <label for="product-id">Product ID:</label>
+            <input type="text" id="product-id" name="product-id" placeholder="Enter Product ID">
+        </div>
+
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+        <!-- Send Button -->
+        <button type="button" id="send">Send</button>
+    </form>
+</section>
+
+
+
+    <!-- References Section -->
+    <section id="references">
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://www.transparenttextures.com" target="_blank">Transparent Texture Picture</a></li>
+            <li><a href="https://www.pexels.com/collections/headphones-gvb8z4b/" target="_blank">Image 1</a></li>
+            <li><a href="https://www.pexels.com/search/headphones/" target="_blank">Image 2</a></li>
+            <li><a href="https://www.pexels.com/photo/black-wireless-headphones-on-white-surface-3945667/" target="_blank">Product 1: Black Wireless Headphones</a></li>
+            <li><a href="https://www.pexels.com/search/dj%20board/" target="_blank">Product 2: DJ Board</a></li>
+            <li><a href="https://www.pexels.com/photo/apple-watch-2779018/" target="_blank">Product 3: Apple Watch</a></li>
+            <li><a href="https://www.pexels.com/photo/children-playing-synthesizer-9872970/" target="_blank">Product 4: Children Playing Synthesizer</a></li>
+        </ul>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">Top</button>
+<script src="js/script.js"></script>
+</body>
+</html>

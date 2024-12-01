@@ -1,0 +1,314 @@
+/* Reset Margins and Padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #070D29; /* Deep navy background */
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, serif;
+    line-height: 1.6;
+    color: #fff; /* White text */
+}
+
+/* Heading Styles */
+h2 {
+    color: #2D6699;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+/* Full-Width Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Parallax Banner Styling */
+#parallax-banner {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Adjust the height as needed */
+    background-image: url('../img/banner-image.png'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-image: url('../img/dirty-old-black-shirt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #429D93;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: white; /* White background on hover */
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+    background: #555; /* Slightly lighter gray on hover */
+}
+
+/* Day Message Styling */
+#day-message-container {
+    text-align: center;
+    padding: 10px;
+    color: #9bbfdc;
+    margin: 10px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#day-message-container p {
+    font-size: 1.2em;
+    color: #9bbfdc;
+}
+
+/* Products Section Styling */
+#products {
+    padding: 20px 10px;
+    text-align: center;
+    opacity: 0; /* Start hidden for scrollfire */
+    transform: translateY(50px); /* Start slightly below viewport */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#products.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide into position */
+}
+
+.product {
+    background-color: #070D29;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 220px;
+    display: inline-block;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: white;
+}
+
+.product button {
+    background-color: #9bbfdc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.product button:hover {
+    background-color: white; /* Change color on hover */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .product {
+        width: 100%; /* Full width for smaller screens */
+        margin: 10px 0;
+    }
+}
+
+/* Contact Form Styling */
+#contact {
+    padding: 20px;
+    background-color: #070D29;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #9bbfdc; /* Highlight border on focus */
+}
+
+button {
+    background-color: white;
+    color: #070D29;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347; 
+}
+
+/* Team Photos Styling */
+.team-photo {
+    opacity: 0;
+    transform: translateX(-100%); /* Start offscreen */
+    transition: opacity 1s ease, transform 1s ease;
+    width: 300px;
+    height: auto;
+    border-radius: 100%; /* Circular images */
+}
+
+.team-photo.visible {
+    opacity: 1;
+    transform: translateX(0); /* Slide into view */
+}
+
+/* Logo Styling */
+.logo-container {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(10deg); /* Zoom and rotate */
+    opacity: 0.9;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* References Links Styling */
+#references a {
+    color: #00a6ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#references a:hover {
+    color: #ff6347;
+}
